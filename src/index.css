@@ -1,0 +1,118 @@
+/* Soft Slate/Gray Fintech Theme for Trader Risk Dashboard */
+
+:root {
+  --bg-primary: #1c2128;      /* Lighter soft dark slate background */
+  --bg-secondary: #22272e;    /* Card/surface background */
+  --bg-tertiary: #2d333b;     /* Input, well, and list item backgrounds */
+  --border-color: #373e47;    /* Subtle, clean gray borders */
+  --border-hover: #444c56;    /* Accent border on focus or hover */
+  
+  --color-primary: #539bf5;   /* Muted steel-blue accent */
+  --color-primary-bg: rgba(83, 155, 245, 0.1);
+  
+  --color-success: #57ab5a;   /* Flat forest green for profits */
+  --color-success-bg: rgba(87, 171, 90, 0.08);
+  
+  --color-danger: #f85149;    /* Flat coral red for losses */
+  --color-danger-bg: rgba(248, 81, 73, 0.08);
+  
+  --color-warning: #c69026;   /* Flat warning amber */
+  --color-warning-bg: rgba(198, 144, 38, 0.08);
+  
+  --text-main: #f0f6fc;       /* Clean heading text */
+  --text-body: #adbac7;       /* Readable body text (reduces eye strain) */
+  --text-muted: #768390;      /* Muted secondary labels */
+  --text-inverse: #1c2128;    /* Dark text on light accents */
+  
+  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  
+  --border-radius-sm: 4px;
+  --border-radius-md: 6px;
+  --border-radius-lg: 8px;
+  
+  --transition-normal: all 0.15s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Premium card layout styling */
+.card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+.card:hover {
+  border-color: var(--border-hover);
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-main);
+}
+
+.number-display {
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+/* Global Helper Utility Classes */
+.text-success {
+  color: var(--color-success);
+}
+.text-danger {
+  color: var(--color-danger);
+}
+.text-warning {
+  color: var(--color-warning);
+}
+.text-muted {
+  color: var(--text-muted);
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-weight-bold {
+  font-weight: 600;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: var(--border-radius-sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-hover);
+}
