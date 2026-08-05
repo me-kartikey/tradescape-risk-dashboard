@@ -1,5 +1,7 @@
 # Tradescape — Trader Risk Dashboard
 
+# live URL: https://tradescape-risk-dashboard-mqa3v94o0-kartikey-dwivedis-projects.vercel.app/
+
 This repository contains the Trader Risk Dashboard built for the Tradescape Full Stack Developer Assignment. It is a modern, responsive single-page web terminal that calculates and visualizes key risk metrics, balance trajectories, and performance statistics from active trading data.
 
 ---
@@ -66,3 +68,4 @@ It measures the absolute worst-case drop and paper losses an account has experie
    ```
 4. **Open in browser:**
    Open the local host URL printed in the terminal (usually `http://localhost:5173`).
+
